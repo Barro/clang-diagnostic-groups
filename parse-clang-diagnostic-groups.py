@@ -51,10 +51,13 @@ class ClangDiagnosticGroupsListener(TableGenListener.TableGenListener):
     def exitClassDefinition(self, ctx):
         if self.currentClassDefinitionName == "DiagGroup":
             if self.currentSwitchName is not None:
-                self.switchNames[self.currentSwitchName] = self.currentDefinitionName
-                self.switchClassesReferences[self.currentSwitchName] = self.currentReferences
+                self.switchNames[self.currentSwitchName] = \
+                    self.currentDefinitionName
+                self.switchClassesReferences[self.currentSwitchName] = \
+                    self.currentReferences
             if self.currentDefinitionName:
-                self.switchClasses[self.currentDefinitionName] = self.currentSwitchName
+                self.switchClasses[self.currentDefinitionName] = \
+                    self.currentSwitchName
         self.currentSwitchName = None
         self.currentClassDefinitionName = None
         self.currentReferences = None
