@@ -6,7 +6,18 @@ import TableGenLexer
 import TableGenListener
 import TableGenParser
 
-string_input = FileStream(sys.argv[1])
+show_class_name = False
+top_nodes_only = False
+
+for arg in sys.argv:
+    if arg == "--show-class":
+        show_class_name = True
+    elif arg == "--top-nodes-only":
+        top_nodes_only = True
+    else:
+        filename = arg
+
+string_input = FileStream(filename)
 lexer = TableGenLexer.TableGenLexer(string_input)
 stream = CommonTokenStream(lexer)
 parser = TableGenParser.TableGenParser(stream)
@@ -40,10 +51,13 @@ class ClangDiagnosticGroupsListener(TableGenListener.TableGenListener):
     def exitClassDefinition(self, ctx):
         if self.currentClassDefinitionName == "DiagGroup":
             if self.currentSwitchName is not None:
-                self.switchNames[self.currentSwitchName] = self.currentDefinitionName
-                self.switchClassesReferences[self.currentSwitchName] = self.currentReferences
+                self.switchNames[self.currentSwitchName] = \
+                    self.currentDefinitionName
+                self.switchClassesReferences[self.currentSwitchName] = \
+                    self.currentReferences
             if self.currentDefinitionName:
-                self.switchClasses[self.currentDefinitionName] = self.currentSwitchName
+                self.switchClasses[self.currentDefinitionName] = \
+                    self.currentSwitchName
         self.currentSwitchName = None
         self.currentClassDefinitionName = None
         self.currentReferences = None
@@ -62,6 +76,12 @@ walker = ParseTreeWalker()
 walker.walk(diagnostics, tree)
 
 
+def class_name_string(class_name):
+    string = ""
+    if show_class_name:
+        string = class_name or " <<<NONE>>>"
+    return string
+
 def print_references(diagnostics, switch_name, level):
     references = diagnostics.switchClassesReferences.get(switch_name, [])
     reference_switches = []
@@ -69,10 +89,25 @@ def print_references(diagnostics, switch_name, level):
         reference_switch_name = diagnostics.switchClasses[reference_class_name]
         reference_switches.append(reference_switch_name)
     for reference_switch_name in sorted(reference_switches):
-        print "# %s-W%s" % ("  " * level, reference_switch_name)
+        class_name = \
+            class_name_string(diagnostics.switchNames[reference_switch_name])
+        switch_string = "%s-W%s" % ("  " * level, reference_switch_name)
+        print "# {0:50} {1}".format(switch_string, class_name)
         print_references(diagnostics, reference_switch_name, level + 1)
 
+def is_root_node(diagnostics, switch_name):
+    for this_name in sorted(diagnostics.switchNames.keys()):
+        references = diagnostics.switchClassesReferences.get(this_name, [])
+        for reference_class_name in references:
+            reference_switch_name = \
+                diagnostics.switchClasses[reference_class_name]
+            if switch_name == reference_switch_name:
+                return False
+    return True
 
 for name in sorted(diagnostics.switchNames.keys()):
-    print "-W%s" % name
-    print_references(diagnostics, name, 1)
+    if not top_nodes_only or is_root_node(diagnostics, name):
+        class_name = class_name_string(diagnostics.switchNames[name])
+        print "-W{0:50} {1}".format (name, class_name)
+        print_references(diagnostics, name, 1)
+

@@ -1,0 +1,336 @@
+-W                                                    <<<NONE>>>
+#   -Wextra                                          Extra
+#     -Wignored-qualifiers                           IgnoredQualifiers
+#     -Winitializer-overrides                        InitializerOverrides
+#     -Wmissing-field-initializers                   MissingFieldInitializers
+#     -Wmissing-method-return-type                   MissingMethodReturnType
+#     -Wsemicolon-before-method-body                 SemiBeforeMethodBody
+#     -Wsign-compare                                 SignCompare
+#     -Wunused-parameter                             UnusedParameter
+-W#pragma-messages                                   PoundPragmaMessage
+-W#warnings                                          PoundWarning
+-WNSObject-attribute                                 NSobjectAttribute
+-Wabi                                                 <<<NONE>>>
+-Wabstract-final-class                               AbstractFinalClass
+-Waddress                                             <<<NONE>>>
+-Waddress-of-temporary                               AddressOfTemporary
+-Waggregate-return                                    <<<NONE>>>
+-Wall                                                 <<<NONE>>>
+#   -Wmost                                           Most
+#     -Wcast-of-sel-type                             SelTypeCast
+#     -Wchar-subscripts                              CharSubscript
+#     -Wcomment                                      Comment
+#     -Wdelete-non-virtual-dtor                      DeleteNonVirtualDtor
+#     -Wformat                                       Format
+#       -Wformat-extra-args                          FormatExtraArgs
+#       -Wformat-invalid-specifier                   FormatInvalidSpecifier
+#       -Wformat-security                            FormatSecurity
+#       -Wformat-y2k                                 FormatY2K
+#       -Wformat-zero-length                         FormatZeroLength
+#       -Wnonnull                                    NonNull
+#     -Wimplicit                                     Implicit
+#       -Wimplicit-function-declaration              ImplicitFunctionDeclare
+#       -Wimplicit-int                               ImplicitInt
+#     -Wmismatched-tags                              MismatchedTags
+#     -Wmissing-braces                               MissingBraces
+#     -Wmultichar                                    MultiChar
+#     -Wobjc-missing-super-calls                     ObjCMissingSuperCalls
+#     -Woverloaded-virtual                           OverloadedVirtual
+#     -Wprivate-extern                               PrivateExtern
+#     -Wreorder                                      Reorder
+#     -Wreturn-type                                  ReturnType
+#       -Wreturn-type-c-linkage                      ReturnTypeCLinkage
+#     -Wself-assign                                  SelfAssignment
+#       -Wself-assign-field                          SelfAssignmentField
+#     -Wsizeof-array-argument                        SizeofArrayArgument
+#     -Wsizeof-array-decay                           SizeofArrayDecay
+#     -Wstring-plus-int                              StringPlusInt
+#     -Wtrigraphs                                    Trigraphs
+#     -Wuninitialized                                Uninitialized
+#       -Wsometimes-uninitialized                    UninitializedSometimes
+#       -Wstatic-self-init                           UninitializedStaticSelfInit
+#     -Wunknown-pragmas                              UnknownPragmas
+#     -Wunused                                       Unused
+#       -Wunused-argument                            UnusedArgument
+#       -Wunused-function                            UnusedFunction
+#         -Wunneeded-internal-declaration            UnneededInternalDecl
+#       -Wunused-label                               UnusedLabel
+#       -Wunused-private-field                       UnusedPrivateField
+#       -Wunused-value                               UnusedValue
+#         -Wunused-comparison                        UnusedComparison
+#         -Wunused-result                            UnusedResult
+#       -Wunused-variable                            UnusedVariable
+#     -Wvolatile-register-var                        VolatileRegisterVar
+#   -Wparentheses                                    Parentheses
+#     -Wbitwise-op-parentheses                       BitwiseOpParentheses
+#     -Wdangling-else                                DanglingElse
+#     -Wlogical-op-parentheses                       LogicalOpParentheses
+#     -Woverloaded-shift-op-parentheses              OverloadedShiftOpParentheses
+#     -Wparentheses-equality                         ParenthesesOnEquality
+#     -Wshift-op-parentheses                         ShiftOpParentheses
+#   -Wswitch                                         Switch
+-Wambiguous-macro                                    AmbiguousMacro
+-Wambiguous-member-template                          AmbigMemberTemplate
+-Warc                                                AutomaticReferenceCounting
+#   -Warc-non-pod-memaccess                          ARCNonPodMemAccess
+#   -Warc-retain-cycles                              ARCRetainCycles
+#   -Warc-unsafe-retained-assign                     ARCUnsafeRetainedAssign
+-Warc-abi                                             <<<NONE>>>
+-Warc-repeated-use-of-weak                           ARCRepeatedUseOfWeak
+#   -Warc-maybe-repeated-use-of-weak                 ARCRepeatedUseOfWeakMaybe
+-Warray-bounds                                       ArrayBounds
+-Warray-bounds-pointer-arithmetic                    ArrayBoundsPointerArithmetic
+-Wasm                                                ASM
+#   -Wasm-operand-widths                             ASMOperandWidths
+-Watomic-properties                                  AtomicProperties
+#   -Wcustom-atomic-properties                       CustomAtomic
+#   -Wimplicit-atomic-properties                     ImplicitAtomic
+-Wattributes                                         UnknownAttributes
+-Wauto-import                                        AutoImport
+-Wavailability                                       Availability
+-Wbad-array-new-length                               BadArrayNewLength
+-Wbad-function-cast                                  BadFunctionCast
+-Wbind-to-temporary-copy                             BindToTemporaryCopy
+#   -Wc++98-compat-bind-to-temporary-copy            CXX98CompatBindToTemporaryCopy
+-Wbool-conversions                                    <<<NONE>>>
+#   -Wbool-conversion                                BoolConversion
+-Wbuiltin-macro-redefined                            BuiltinMacroRedefined
+-Wbuiltin-requires-header                            BuiltinRequiresHeader
+-Wc++-compat                                         CXXCompat
+-Wc++0x-compat                                        <<<NONE>>>
+#   -Wc++11-compat                                   CXX11Compat
+#     -Wc++11-compat-reserved-user-defined-literal   CXX11CompatReservedUserDefinedLiteral
+#     -Wc++11-narrowing                              CXX11Narrowing
+#     -Wcxx98-cxx11-compat                           CXXPre1yCompat
+-Wc++0x-extensions                                    <<<NONE>>>
+#   -Wc++11-extensions                               CXX11
+#     -Wc++11-extra-semi                             CXX11ExtraSemi
+#     -Wc++11-long-long                              CXX11LongLong
+-Wc++0x-narrowing                                     <<<NONE>>>
+#   -Wc++11-narrowing                                CXX11Narrowing
+-Wc++11-compat-pedantic                              CXX11CompatPedantic
+#   -Wcxx98-cxx11-compat-pedantic                    CXXPre1yCompatPedantic
+#     -Wcxx98-cxx11-compat                           CXXPre1yCompat
+-Wc++1y-extensions                                   CXX1y
+-Wc++98-compat-pedantic                              CXX98CompatPedantic
+#   -Wc++98-compat                                   CXX98Compat
+#     -Wc++98-compat-bind-to-temporary-copy          CXX98CompatBindToTemporaryCopy
+#     -Wc++98-compat-local-type-template-args        CXX98CompatLocalTypeTemplateArgs
+#     -Wc++98-compat-unnamed-type-template-args      CXX98CompatUnnamedTypeTemplateArgs
+#     -Wcxx98-cxx11-compat                           CXXPre1yCompat
+#   -Wcxx98-cxx11-compat-pedantic                    CXXPre1yCompatPedantic
+#     -Wcxx98-cxx11-compat                           CXXPre1yCompat
+-Wc11-extensions                                     C11
+-Wc99-compat                                         C99Compat
+-Wc99-extensions                                     C99
+-Wcast-align                                         CastAlign
+-Wcast-qual                                           <<<NONE>>>
+-Wchar-align                                          <<<NONE>>>
+-Wcomments                                            <<<NONE>>>
+#   -Wcomment                                        Comment
+-Wcompare-distinct-pointer-types                     CompareDistinctPointerType
+-Wconditional-uninitialized                          UninitializedMaybe
+-Wconfig-macros                                      ConfigMacros
+-Wconversion-null                                     <<<NONE>>>
+#   -Wnull-conversion                                NullConversion
+-Wcovered-switch-default                             CoveredSwitchDefault
+-Wctor-dtor-privacy                                   <<<NONE>>>
+-Wdangling-field                                     DanglingField
+-Wdelegating-ctor-cycles                             DelegatingCtorCycles
+-Wdeprecated                                         Deprecated
+#   -Wdeprecated-declarations                        DeprecatedDeclarations
+-Wdeprecated-implementations                         DeprecatedImplementations
+-Wdeprecated-objc-isa-usage                          DeprecatedObjCIsaUsage
+-Wdisabled-optimization                               <<<NONE>>>
+-Wdiscard-qual                                        <<<NONE>>>
+-Wdistributed-object-modifiers                       DistributedObjectModifiers
+-Wdiv-by-zero                                         <<<NONE>>>
+-Wdivision-by-zero                                   DivZero
+-Wdocumentation                                      Documentation
+#   -Wdocumentation-deprecated-sync                  DocumentationDeprecatedSync
+#   -Wdocumentation-html                             DocumentationHTML
+-Wdocumentation-pedantic                             DocumentationPedantic
+#   -Wdocumentation-unknown-command                  DocumentationUnknownCommand
+-Wduplicate-decl-specifier                           DuplicateDeclSpecifier
+-Wduplicate-method-arg                               DuplicateArgDecl
+-Wduplicate-method-match                             MethodDuplicate
+-Weffc++                                              <<<NONE>>>
+-Wempty-body                                         EmptyBody
+-Wendif-labels                                        <<<NONE>>>
+#   -Wextra-tokens                                   ExtraTokens
+-Wexit-time-destructors                              ExitTimeDestructors
+-Wextra-semi                                         ExtraSemi
+#   -Wc++11-extra-semi                               CXX11ExtraSemi
+-Wflexible-array-extensions                          FlexibleArrayExtensions
+-Wformat-non-iso                                     FormatNonStandard
+-Wformat=2                                           Format2
+#   -Wformat-nonliteral                              FormatNonLiteral
+#     -Wformat-security                              FormatSecurity
+#   -Wformat-security                                FormatSecurity
+#   -Wformat-y2k                                     FormatY2K
+-Wfour-char-constants                                FourByteMultiChar
+-Wgcc-compat                                         GccCompat
+-Wglobal-constructors                                GlobalConstructors
+-Wgnu                                                GNU
+#   -Wgnu-designator                                 GNUDesignator
+#   -Wgnu-static-float-init                          GNUStaticFloatInit
+#   -Wvla-extension                                  VLAExtension
+#   -Wzero-length-array                              ZeroLengthArray
+-Wheader-hygiene                                     HeaderHygiene
+-Wignored-attributes                                 IgnoredAttributes
+-Wimplicit-conversion-floating-point-to-bool         ImplicitConversionFloatingPointToBool
+-Wimplicit-fallthrough                               ImplicitFallthrough
+#   -Wimplicit-fallthrough-per-function              ImplicitFallthroughPerFunction
+-Wimport                                              <<<NONE>>>
+-Wincompatible-pointer-types                         IncompatiblePointerTypes
+#   -Wincompatible-pointer-types-discards-qualifiers IncompatiblePointerTypesDiscardsQualifiers
+-Wincomplete-umbrella                                IncompleteUmbrella
+-Winit-self                                           <<<NONE>>>
+-Winline                                              <<<NONE>>>
+-Wint-conversions                                     <<<NONE>>>
+#   -Wint-conversion                                 IntConversion
+-Wint-to-pointer-cast                                IntToPointerCast
+-Winvalid-noreturn                                   InvalidNoreturn
+-Winvalid-offsetof                                   InvalidOffsetof
+-Winvalid-pch                                         <<<NONE>>>
+-Winvalid-pp-token                                   InvalidPPToken
+-Winvalid-source-encoding                            InvalidSourceEncoding
+-Wknr-promoted-parameter                             KNRPromotedParameter
+-Wlarge-by-value-copy                                LargeByValueCopy
+-Wlocal-type-template-args                           LocalTypeTemplateArgs
+#   -Wc++98-compat-local-type-template-args          CXX98CompatLocalTypeTemplateArgs
+-Wlong-long                                          LongLong
+#   -Wc++11-long-long                                CXX11LongLong
+-Wmain                                               Main
+-Wmain-return-type                                   MainReturnType
+-Wmalformed-warning-check                            MalformedWarningCheck
+-Wmethod-signatures                                  MethodSignatures
+-Wmicrosoft                                          Microsoft
+-Wmismatched-parameter-types                         MismatchedParameterTypes
+-Wmismatched-return-types                            MismatchedReturnTypes
+-Wmissing-declarations                               MissingDeclarations
+-Wmissing-format-attribute                            <<<NONE>>>
+-Wmissing-include-dirs                                <<<NONE>>>
+-Wmissing-noreturn                                   MissingNoreturn
+-Wmodule-conflict                                    ModuleConflict
+-Wnarrowing                                           <<<NONE>>>
+#   -Wc++11-narrowing                                CXX11Narrowing
+-Wnested-externs                                      <<<NONE>>>
+-Wnon-gcc                                            NonGCC
+#   -Wconversion                                     Conversion
+#     -Wbool-conversion                              BoolConversion
+#     -Wconstant-conversion                          ConstantConversion
+#       -Wbitfield-constant-conversion               BitFieldConstantConversion
+#     -Wenum-conversion                              EnumConversion
+#     -Wint-conversion                               IntConversion
+#     -Wliteral-conversion                           LiteralConversion
+#     -Wnon-literal-null-conversion                  NonLiteralNullConversion
+#     -Wnull-conversion                              NullConversion
+#     -Wshorten-64-to-32                             Shorten64To32
+#     -Wsign-conversion                              SignConversion
+#     -Wstring-conversion                            StringConversion
+#   -Wliteral-range                                  LiteralRange
+#   -Wsign-compare                                   SignCompare
+-Wnon-pod-varargs                                    NonPODVarargs
+-Wnon-virtual-dtor                                   NonVirtualDtor
+-Wnonportable-cfstrings                               <<<NONE>>>
+-Wnull-arithmetic                                    NullArithmetic
+-Wnull-character                                     NullCharacter
+-Wnull-dereference                                   NullDereference
+-Wobjc-cocoa-api                                     ObjCCocoaAPI
+#   -Wobjc-redundant-api-use                         ObjCRedundantAPIUse
+#     -Wobjc-redundant-literal-use                   ObjCRedundantLiteralUse
+-Wobjc-literal-compare                               ObjCLiteralComparison
+#   -Wobjc-string-compare                            ObjCStringComparison
+-Wobjc-method-access                                 MethodAccess
+-Wobjc-noncopy-retain-block-property                 ObjCRetainBlockProperty
+-Wobjc-nonunified-exceptions                         ObjCNonUnifiedException
+-Wobjc-property-implementation                       ObjCPropertyImpl
+-Wobjc-property-no-attribute                         ObjCPropertyNoAttribute
+-Wobjc-property-synthesis                            ObjCNoPropertyAutoSynthesis
+-Wobjc-protocol-method-implementation                ObjCProtocolMethodImpl
+-Wobjc-readonly-with-setter-property                 ObjCReadonlyPropertyHasSetter
+-Wobjc-root-class                                    ObjCRootClass
+-Wold-style-cast                                      <<<NONE>>>
+-Wold-style-definition                                <<<NONE>>>
+-Wout-of-line-declaration                            OutOfLineDeclaration
+-Wover-aligned                                       OveralignedType
+-Woverflow                                            <<<NONE>>>
+-Woverlength-strings                                 OverlengthStrings
+-Woverriding-method-mismatch                         OverridingMethodMismatch
+-Wpacked                                             Packed
+-Wpadded                                             Padded
+-Wpedantic                                           Pedantic
+-Wpointer-arith                                      PointerArith
+-Wpointer-to-int-cast                                 <<<NONE>>>
+-Wprotocol                                           Protocol
+-Wreadonly-setter-attrs                              ReadOnlySetterAttrs
+-Wreceiver-expr                                      ObjCReceiver
+-Wreceiver-forward-class                             ForwardClassReceiver
+-Wredundant-decls                                     <<<NONE>>>
+-Wreinterpret-base-class                             ReinterpretBaseClass
+-Wreserved-user-defined-literal                      ReservedUserDefinedLiteral
+#   -Wc++11-compat-reserved-user-defined-literal     CXX11CompatReservedUserDefinedLiteral
+-Wreturn-stack-address                               ReturnStackAddress
+-Wsection                                            Section
+-Wselector                                           Selector
+-Wsentinel                                           Sentinel
+-Wsequence-point                                      <<<NONE>>>
+#   -Wunsequenced                                    Unsequenced
+-Wshadow                                             Shadow
+-Wsign-promo                                          <<<NONE>>>
+-Wsizeof-pointer-memaccess                           SizeofPointerMemaccess
+-Wsource-uses-openmp                                 SourceUsesOpenMP
+-Wstack-protector                                     <<<NONE>>>
+-Wstatic-float-init                                  StaticFloatInit
+#   -Wgnu-static-float-init                          GNUStaticFloatInit
+-Wstatic-in-inline                                   StaticInInline
+-Wstatic-local-in-inline                             StaticLocalInInline
+-Wstrict-aliasing                                     <<<NONE>>>
+-Wstrict-aliasing=0                                   <<<NONE>>>
+-Wstrict-aliasing=1                                   <<<NONE>>>
+-Wstrict-aliasing=2                                   <<<NONE>>>
+-Wstrict-overflow                                     <<<NONE>>>
+-Wstrict-overflow=0                                   <<<NONE>>>
+-Wstrict-overflow=1                                   <<<NONE>>>
+-Wstrict-overflow=2                                   <<<NONE>>>
+-Wstrict-overflow=3                                   <<<NONE>>>
+-Wstrict-overflow=4                                   <<<NONE>>>
+-Wstrict-overflow=5                                   <<<NONE>>>
+-Wstrict-prototypes                                   <<<NONE>>>
+-Wstrict-selector-match                              StrictSelector
+-Wstrncat-size                                       StrncatSize
+-Wsuper-class-method-mismatch                        SuperSubClassMismatch
+-Wswitch-default                                      <<<NONE>>>
+-Wswitch-enum                                        SwitchEnum
+-Wsynth                                               <<<NONE>>>
+-Wtautological-compare                               TautologicalCompare
+#   -Wtautological-constant-out-of-range-compare     TautologicalOutOfRangeCompare
+-Wthread-safety                                      ThreadSafety
+#   -Wthread-safety-analysis                         ThreadSafetyAnalysis
+#   -Wthread-safety-attributes                       ThreadSafetyAttributes
+#   -Wthread-safety-precise                          ThreadSafetyPrecise
+-Wthread-safety-beta                                 ThreadSafetyBeta
+-Wtype-limits                                         <<<NONE>>>
+-Wtype-safety                                        TypeSafety
+-Wundeclared-selector                                UndeclaredSelector
+-Wundefined-reinterpret-cast                         UndefinedReinterpretCast
+-Wunicode                                            Unicode
+-Wunknown-warning-option                             UnknownWarningOption
+-Wunnamed-type-template-args                         UnnamedTypeTemplateArgs
+#   -Wc++98-compat-unnamed-type-template-args        CXX98CompatUnnamedTypeTemplateArgs
+-Wunused-command-line-argument                       UnusedCommandLineArgument
+#   -Wunused-sanitize-argument                       UnusedSanitizeArgument
+-Wunused-exception-parameter                         UnusedExceptionParameter
+-Wunused-member-function                             UnusedMemberFunction
+#   -Wunneeded-member-function                       UnneededMemberFunction
+-Wused-but-marked-unused                             UsedButMarkedUnused
+-Wuser-defined-literals                              UserDefinedLiterals
+-Wvariadic-macros                                    VariadicMacros
+-Wvector-conversions                                  <<<NONE>>>
+#   -Wvector-conversion                              VectorConversion
+-Wvexing-parse                                       VexingParse
+-Wvisibility                                         Visibility
+-Wvla                                                VLA
+-Wwrite-strings                                      GCCWriteStrings
+#   -Wdeprecated-writable-strings                    DeprecatedWritableStr
