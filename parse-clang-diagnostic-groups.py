@@ -7,10 +7,13 @@ import TableGenListener
 import TableGenParser
 
 show_class_name = False
+top_nodes_only = False
 
 for arg in sys.argv:
     if arg == "--show-class":
         show_class_name = True
+    elif arg == "--top-nodes-only":
+        top_nodes_only = True
     else:
         filename = arg
 
@@ -89,9 +92,19 @@ def print_references(diagnostics, switch_name, level):
         print "# {0:50} {1}".format(switch_string, class_name)
         print_references(diagnostics, reference_switch_name, level + 1)
 
+def is_root_node(diagnostics, switch_name):
+    for this_name in sorted(diagnostics.switchNames.keys()):
+        references = diagnostics.switchClassesReferences.get(this_name, [])
+        for reference_class_name in references:
+            reference_switch_name = \
+                diagnostics.switchClasses[reference_class_name]
+            if switch_name == reference_switch_name:
+                return False
+    return True
+
 for name in sorted(diagnostics.switchNames.keys()):
-    class_name = \
-        class_name_string(diagnostics.switchNames[name])
-    print "-W{0:50} {1}".format (name, class_name)
-    print_references(diagnostics, name, 1)
+    if not top_nodes_only or is_root_node(diagnostics, name):
+        class_name = class_name_string(diagnostics.switchNames[name])
+        print "-W{0:50} {1}".format (name, class_name)
+        print_references(diagnostics, name, 1)
 
