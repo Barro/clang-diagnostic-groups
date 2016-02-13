@@ -6,7 +6,15 @@ import TableGenLexer
 import TableGenListener
 import TableGenParser
 
-string_input = FileStream(sys.argv[1])
+show_class_name = False
+
+for arg in sys.argv:
+    if arg == "--show-class":
+        show_class_name = True
+    else:
+        filename = arg
+
+string_input = FileStream(filename)
 lexer = TableGenLexer.TableGenLexer(string_input)
 stream = CommonTokenStream(lexer)
 parser = TableGenParser.TableGenParser(stream)
@@ -62,6 +70,12 @@ walker = ParseTreeWalker()
 walker.walk(diagnostics, tree)
 
 
+def class_name_string(class_name):
+    string = ""
+    if show_class_name:
+        string = class_name or " <<<NONE>>>"
+    return string
+
 def print_references(diagnostics, switch_name, level):
     references = diagnostics.switchClassesReferences.get(switch_name, [])
     reference_switches = []
@@ -69,10 +83,15 @@ def print_references(diagnostics, switch_name, level):
         reference_switch_name = diagnostics.switchClasses[reference_class_name]
         reference_switches.append(reference_switch_name)
     for reference_switch_name in sorted(reference_switches):
-        print "# %s-W%s" % ("  " * level, reference_switch_name)
+        class_name = \
+            class_name_string(diagnostics.switchNames[reference_switch_name])
+        switch_string = "%s-W%s" % ("  " * level, reference_switch_name)
+        print "# {0:50} {1}".format(switch_string, class_name)
         print_references(diagnostics, reference_switch_name, level + 1)
 
-
 for name in sorted(diagnostics.switchNames.keys()):
-    print "-W%s" % name
+    class_name = \
+        class_name_string(diagnostics.switchNames[name])
+    print "-W{0:50} {1}".format (name, class_name)
     print_references(diagnostics, name, 1)
+

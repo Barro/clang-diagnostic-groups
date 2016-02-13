@@ -26,8 +26,13 @@ After you have installed all the requirements and are able to run
 ANTLR with `antlr4` command, just use following commands:
 
     make
-    ./parse-clang-diagnostic-groups.py <path-to-clang-source>/include/clang/Basic/DiagnosticGroups.td
+    ./parse-clang-diagnostic-groups.py <path-to-clang-source>/include/clang/Basic/DiagnosticGroups.td [--show-class]
 
 And you'll get the list of all individual warning flags and their
 dependencies that are in the requested clang version.
 
+Using the --show-class flag displays the diagnostic class name next to the
+diagnostic switch flag name, which is useful for seeing which flags have no
+associated class name ("None") and thus have no effect in themselves (though
+their children may). Such flags may exist to have command line compatibility
+with GCC.
