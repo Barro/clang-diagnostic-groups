@@ -8,6 +8,7 @@ that [clang compiler](http://clang.llvm.org/) has:
 * [clang 3.4 warnings](warnings-clang-3.4.txt)
 * [clang 3.5 warnings](warnings-clang-3.5.txt)
 * [clang 3.6 warnings](warnings-clang-3.6.txt)
+* [clang 3.7 warnings](warnings-clang-3.7.txt)
 
 # Requirements
 
