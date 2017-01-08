@@ -15,7 +15,11 @@ trailer : OPEN_PAREN argumentList? CLOSE_PAREN ;
 
 argumentList : argument (COMMA SPACE* argument)* ;
 
-argument : orTest ;
+argument : ternary ;
+
+ternary
+   :<assoc=right> ternary SPACE* '?' SPACE* ternary SPACE* ':' SPACE* ternary
+   | orTest ;
 
 orTest : andTest (SPACE* OR SPACE* andTest)* ;
 
