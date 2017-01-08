@@ -52,14 +52,18 @@ parse_gcc_info 4.7 "$target_dir" "$GIT_DIR"/gcc/{common.opt,c-family/c.opt}
 git -C "$GIT_DIR" checkout gcc-4_8_5-release
 parse_gcc_info 4.8 "$target_dir" "$GIT_DIR"/gcc/{common.opt,c-family/c.opt}
 
-git -C "$GIT_DIR" checkout gcc-4_9_3-release
+git -C "$GIT_DIR" checkout gcc-4_9_4-release
 parse_gcc_info 4.9 "$target_dir" "$GIT_DIR"/gcc/{common.opt,c-family/c.opt}
 
-git -C "$GIT_DIR" checkout gcc-5_3_0-release
+git -C "$GIT_DIR" checkout gcc-5_4_0-release
 parse_gcc_info 5 "$target_dir" "$GIT_DIR"/gcc/{common.opt,c-family/c.opt}
 
-git -C "$GIT_DIR" checkout gcc-6_1_0-release
+git -C "$GIT_DIR" checkout gcc-6_3_0-release
 parse_gcc_info 6 "$target_dir" "$GIT_DIR"/gcc/{common.opt,c-family/c.opt}
+
+git -C "$GIT_DIR" fetch origin master
+git -C "$GIT_DIR" checkout origin/master
+parse_gcc_info NEXT "$target_dir" "$GIT_DIR"/gcc/{common.opt,c-family/c.opt}
 
 versions=(
     3.4
@@ -75,6 +79,7 @@ versions=(
     4.9
     5
     6
+    NEXT
 )
 
 seq 2 "${#versions[@]}" | while read -r current_version in ; do
