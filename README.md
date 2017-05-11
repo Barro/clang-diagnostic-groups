@@ -136,9 +136,9 @@ compiler option data files. Other requirements are following (plus
 their dependencies):
 
 * [Ninja](https://ninja-build.org/)
-* [ANTLR4](http://www.antlr.org/)
+* [ANTLR 4.5](http://www.antlr.org/)
 * [Python 2.7](https://www.python.org/)
-* [antlr4-python2-runtime](https://pypi.python.org/pypi/antlr4-python2-runtime/)
+* [antlr4-python2-runtime 4.5.2.1](https://pypi.python.org/pypi/antlr4-python2-runtime/)
 
 ## Building
 
