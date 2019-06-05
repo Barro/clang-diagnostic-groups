@@ -1,3 +1,16 @@
+# enabled by default:
+#    -Wdeprecated
+#    -Wdeprecated-declarations
+#    -Wdiv-by-zero
+#    -Wimplicit-function-declaration
+#    -Winvalid-offsetof
+#    -Wlong-long
+#    -Wmissing-field-initializers
+#    -Wnon-template-friend
+#    -Wpmf-conversions
+#    -Wpointer-sign
+#    -Wprotocol
+#    -Wsign-compare
 -pedantic
 -Wabi
 -Waggregate-return
@@ -11,10 +24,7 @@
 -Wconversion
 -Wctor-dtor-privacy
 -Wdeclaration-after-statement
--Wdeprecated
--Wdeprecated-declarations
 -Wdisabled-optimization
--Wdiv-by-zero
 -Weffc++
 -Wendif-labels
 -Werror-implicit-function-declaration
@@ -28,26 +38,21 @@
 -Wformat-zero-length
 -Wformat=
 -Wimplicit
--Wimplicit-function-declaration
 -Wimplicit-int
 -Wimport
 -Winit-self
 -Winline
--Winvalid-offsetof
 -Winvalid-pch
 -Wlarger-than-
--Wlong-long
 -Wmain
 -Wmissing-braces
 -Wmissing-declarations
--Wmissing-field-initializers
 -Wmissing-format-attribute
 -Wmissing-include-dirs
 -Wmissing-noreturn
 -Wmissing-prototypes
 -Wmultichar
 -Wnested-externs
--Wnon-template-friend
 -Wnon-virtual-dtor
 -Wnonnull
 -Wold-style-cast
@@ -56,17 +61,13 @@
 -Wpacked
 -Wpadded
 -Wparentheses
--Wpmf-conversions
 -Wpointer-arith
--Wpointer-sign
--Wprotocol
 -Wredundant-decls
 -Wreorder
 -Wreturn-type
 -Wselector
 -Wsequence-point
 -Wshadow
--Wsign-compare
 -Wsign-promo
 -Wstrict-aliasing
 -Wstrict-aliasing=

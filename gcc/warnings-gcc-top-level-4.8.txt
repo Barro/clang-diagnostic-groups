@@ -1,7 +1,42 @@
+# enabled by default:
+#    -Waggressive-loop-optimizations
+#    -Wattributes
+#    -Wconversion-null
+#    -Wcoverage-mismatch
+#    -Wcpp
+#    -Wdeprecated
+#    -Wdeprecated-declarations
+#    -Wdiv-by-zero
+#    -Wenum-compare
+#    -Wfree-nonheap-object
+#    -Wimplicit-function-declaration
+#    -Winherited-variadic-ctor
+#    -Wint-to-pointer-cast
+#    -Winvalid-memory-model
+#    -Winvalid-offsetof
+#    -Wlong-long
+#    -Wmain
+#    -Wmudflap
+#    -Wnarrowing
+#    -Wnon-template-friend
+#    -Woverflow
+#    -Wpacked-bitfield-compat
+#    -Wpmf-conversions
+#    -Wpointer-to-int-cast
+#    -Wpragmas
+#    -Wproperty-assign-default
+#    -Wprotocol
+#    -Wpsabi
+#    -Wreturn-local-addr
+#    -Wsync-nand
+#    -Wunused-result
+#    -Wvarargs
+#    -Wvariadic-macros
+#    -Wvirtual-move-assign
+#    -Wvla
 -Wabi
 -Wabi-tag
 -Waggregate-return
--Waggressive-loop-optimizations
 -Wall
 #    -Waddress
 #    -Warray-bounds
@@ -49,7 +84,6 @@
 #      -Wunused-variable
 #    -Wvolatile-register-var
 -Wassign-intercept
--Wattributes
 -Wbad-function-cast
 -Wbuiltin-macro-redefined
 -Wc++-compat
@@ -59,15 +93,9 @@
 -Wcomment
 -Wconversion
 #    -Wsign-conversion
--Wconversion-null
--Wcoverage-mismatch
--Wcpp
 -Wctor-dtor-privacy
 -Wdeclaration-after-statement
--Wdeprecated
--Wdeprecated-declarations
 -Wdisabled-optimization
--Wdiv-by-zero
 -Wdouble-promotion
 -Weffc++
 #    -Wdelete-non-virtual-dtor
@@ -88,49 +116,32 @@
 #    -Wunused-parameter
 -Wfloat-equal
 -Wframe-larger-than=
--Wfree-nonheap-object
 -Wimport # DUMMY switch
--Winherited-variadic-ctor
 -Winline
--Wint-to-pointer-cast
--Winvalid-memory-model
--Winvalid-offsetof
 -Winvalid-pch
 -Wjump-misses-init
 -Wlarger-than=
 -Wliteral-suffix
 -Wlogical-op
--Wlong-long
 -Wmissing-declarations
 -Wmissing-include-dirs
 -Wmissing-prototypes
--Wmudflap
 -Wmultichar
 -Wnested-externs
 -Wnoexcept
--Wnon-template-friend
 -Wnon-virtual-dtor
 -Wnormalized=
 -Wold-style-cast
 -Wold-style-definition
--Woverflow
 -Woverloaded-virtual
 -Wpacked
--Wpacked-bitfield-compat
 -Wpadded
 -Wpedantic
 #    -Wmain
 #    -Woverlength-strings
 #    -Wpointer-sign
--Wpmf-conversions
 -Wpointer-arith
--Wpointer-to-int-cast
--Wpragmas
--Wproperty-assign-default
--Wprotocol
--Wpsabi
 -Wredundant-decls
--Wreturn-local-addr
 -Wselector
 -Wshadow
 -Wsign-promo
@@ -147,7 +158,6 @@
 -Wsuggest-attribute=pure
 -Wswitch-default
 -Wswitch-enum
--Wsync-nand
 -Wsynth
 -Wsystem-headers
 -Wtraditional
@@ -160,12 +170,7 @@
 -Wunsafe-loop-optimizations
 -Wunsuffixed-float-constants
 -Wunused-macros
--Wunused-result
 -Wuseless-cast
--Wvarargs
--Wvariadic-macros
 -Wvector-operation-performance
--Wvirtual-move-assign
--Wvla
 -Wwrite-strings
 -Wzero-as-null-pointer-constant

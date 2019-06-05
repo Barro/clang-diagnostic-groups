@@ -1,14 +1,14 @@
 +-Warray-bounds
 +-Wc++0x-compat
-+-Wclobbered
++-Wclobbered # (enabled by default)
 +-Wcoverage-mismatch
-+-Wempty-body
++-Wempty-body # (enabled by default)
 +-Wformat-contains-nul
-+-Wignored-qualifiers
++-Wignored-qualifiers # (enabled by default)
 +-Wlogical-op
-+-Wmissing-parameter-type
-+-Wold-style-declaration
-+-Wsign-conversion
++-Wmissing-parameter-type # (enabled by default)
++-Wold-style-declaration # (enabled by default)
++-Wsign-conversion # (enabled by default)
 +-Wtraditional-conversion
-+-Wtype-limits
-+-Wvla
++-Wtype-limits # (enabled by default)
++-Wvla # (enabled by default)

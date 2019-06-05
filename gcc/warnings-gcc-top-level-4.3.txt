@@ -1,3 +1,31 @@
+# enabled by default:
+#    -Wattributes
+#    -Wclobbered
+#    -Wdeprecated
+#    -Wdeprecated-declarations
+#    -Wdiv-by-zero
+#    -Wempty-body
+#    -Wignored-qualifiers
+#    -Wimplicit-function-declaration
+#    -Wint-to-pointer-cast
+#    -Winvalid-offsetof
+#    -Wlong-long
+#    -Wmissing-field-initializers
+#    -Wmissing-parameter-type
+#    -Wnon-template-friend
+#    -Wold-style-declaration
+#    -Woverflow
+#    -Woverlength-strings
+#    -Woverride-init
+#    -Wpmf-conversions
+#    -Wpointer-sign
+#    -Wpointer-to-int-cast
+#    -Wpragmas
+#    -Wprotocol
+#    -Wsign-compare
+#    -Wsign-conversion
+#    -Wtype-limits
+#    -Wvla
 -pedantic
 -Wabi
 -Waddress
@@ -5,26 +33,20 @@
 -Wall
 -Warray-bounds
 -Wassign-intercept
--Wattributes
 -Wbad-function-cast
 -Wc++-compat
 -Wc++0x-compat
 -Wcast-align
 -Wcast-qual
 -Wchar-subscripts
--Wclobbered
 -Wcomment
 -Wcomments
 -Wconversion
 -Wcoverage-mismatch
 -Wctor-dtor-privacy
 -Wdeclaration-after-statement
--Wdeprecated
--Wdeprecated-declarations
 -Wdisabled-optimization
--Wdiv-by-zero
 -Weffc++
--Wempty-body
 -Wendif-labels
 -Werror-implicit-function-declaration
 -Wextra
@@ -37,58 +59,39 @@
 -Wformat-y2k
 -Wformat-zero-length
 -Wformat=
--Wignored-qualifiers
 -Wimplicit
--Wimplicit-function-declaration
 -Wimplicit-int
 -Wimport
 -Winit-self
 -Winline
--Wint-to-pointer-cast
--Winvalid-offsetof
 -Winvalid-pch
 -Wlarger-than-
 -Wlogical-op
--Wlong-long
 -Wmain
 -Wmissing-braces
 -Wmissing-declarations
--Wmissing-field-initializers
 -Wmissing-format-attribute
 -Wmissing-include-dirs
 -Wmissing-noreturn
--Wmissing-parameter-type
 -Wmissing-prototypes
 -Wmultichar
 -Wnested-externs
--Wnon-template-friend
 -Wnon-virtual-dtor
 -Wnonnull
 -Wnormalized=
 -Wold-style-cast
--Wold-style-declaration
 -Wold-style-definition
--Woverflow
--Woverlength-strings
 -Woverloaded-virtual
--Woverride-init
 -Wpacked
 -Wpadded
 -Wparentheses
--Wpmf-conversions
 -Wpointer-arith
--Wpointer-sign
--Wpointer-to-int-cast
--Wpragmas
--Wprotocol
 -Wredundant-decls
 -Wreorder
 -Wreturn-type
 -Wselector
 -Wsequence-point
 -Wshadow
--Wsign-compare
--Wsign-conversion
 -Wsign-promo
 -Wstack-protector
 -Wstrict-aliasing
@@ -106,7 +109,6 @@
 -Wtraditional
 -Wtraditional-conversion
 -Wtrigraphs
--Wtype-limits
 -Wundeclared-selector
 -Wundef
 -Wuninitialized
@@ -121,6 +123,5 @@
 -Wunused-value
 -Wunused-variable
 -Wvariadic-macros
--Wvla
 -Wvolatile-register-var
 -Wwrite-strings

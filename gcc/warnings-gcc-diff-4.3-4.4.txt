@@ -1,8 +1,20 @@
 +-Wbuiltin-macro-redefined
-+-Wenum-compare
++-Wenum-compare # (enabled by default)
 +-Wframe-larger-than=
 +-Wlarger-than=
-+-Wmudflap
-+-Wpacked-bitfield-compat
-+-Wpsabi
-+-Wsync-nand
+--Wmain
++-Wmain # (enabled by default)
++-Wmudflap # (enabled by default)
++-Wpacked-bitfield-compat # (enabled by default)
++-Wpsabi # (enabled by default)
++-Wsync-nand # (enabled by default)
+--Wunused-function
+--Wunused-label
++-Wunused-function # (enabled by default)
++-Wunused-label # (enabled by default)
+--Wunused-parameter
+--Wunused-value
+--Wunused-variable
++-Wunused-parameter # (enabled by default)
++-Wunused-value # (enabled by default)
++-Wunused-variable # (enabled by default)

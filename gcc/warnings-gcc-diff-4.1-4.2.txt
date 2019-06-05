@@ -1,6 +1,6 @@
 +-Waddress
-+-Woverflow
-+-Woverlength-strings
-+-Woverride-init
++-Woverflow # (enabled by default)
++-Woverlength-strings # (enabled by default)
++-Woverride-init # (enabled by default)
 +-Wstrict-overflow
 +-Wstrict-overflow=

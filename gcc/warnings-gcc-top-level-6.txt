@@ -1,9 +1,70 @@
+# enabled by default:
+#    -Waggressive-loop-optimizations
+#    -Wattributes
+#    -Wbuiltin-macro-redefined
+#    -Wc90-c99-compat
+#      -Wlong-long
+#    -Wc99-c11-compat
+#    -Wconversion-null
+#    -Wcoverage-mismatch
+#    -Wcpp
+#    -Wdeclaration-after-statement
+#    -Wdelete-incomplete
+#    -Wdeprecated
+#    -Wdeprecated-declarations
+#    -Wdesignated-init
+#    -Wdiscarded-array-qualifiers
+#    -Wdiscarded-qualifiers
+#    -Wdiv-by-zero
+#    -Wendif-labels
+#    -Wenum-compare
+#    -Wfree-nonheap-object
+#    -Whsa
+#    -Wignored-attributes
+#    -Wimplicit-function-declaration
+#    -Wimplicit-int
+#    -Wincompatible-pointer-types
+#    -Winherited-variadic-ctor
+#    -Wint-conversion
+#    -Wint-to-pointer-cast
+#    -Winvalid-memory-model
+#    -Winvalid-offsetof
+#    -Wliteral-suffix
+#    -Wlong-long
+#    -Wlto-type-mismatch
+#    -Wmain
+#    -Wnarrowing
+#    -Wnon-template-friend
+#    -Wodr
+#    -Woverflow
+#    -Woverride-init-side-effects
+#    -Wpacked-bitfield-compat
+#    -Wpmf-conversions
+#    -Wpointer-to-int-cast
+#    -Wpragmas
+#    -Wproperty-assign-default
+#    -Wprotocol
+#    -Wpsabi
+#    -Wreturn-local-addr
+#    -Wscalar-storage-order
+#    -Wshadow-ivar
+#    -Wshift-count-negative
+#    -Wshift-count-overflow
+#    -Wshift-negative-value
+#    -Wsizeof-array-argument
+#    -Wsubobject-linkage
+#    -Wswitch-bool
+#    -Wsync-nand
+#    -Wterminate
+#    -Wunused-result
+#    -Wvarargs
+#    -Wvirtual-move-assign
+#    -Wvla
 -Wabi
 #    -Wpsabi
 -Wabi-tag
 -Wabi=
 -Waggregate-return
--Waggressive-loop-optimizations
 -Wall
 #    -Waddress
 #    -Warray-bounds
@@ -65,34 +126,18 @@
 #        -Wunused-const-variable=
 #    -Wvolatile-register-var
 -Wassign-intercept
--Wattributes
 -Wbad-function-cast
--Wbuiltin-macro-redefined
 -Wc++-compat
 #    -Wenum-compare
--Wc90-c99-compat
-#    -Wlong-long
--Wc99-c11-compat
 -Wcast-align
 -Wcast-qual
 -Wconditionally-supported
 -Wconversion
 #    -Wfloat-conversion
 #    -Wsign-conversion
--Wconversion-null
--Wcoverage-mismatch
--Wcpp
 -Wctor-dtor-privacy
 -Wdate-time
--Wdeclaration-after-statement
--Wdelete-incomplete
--Wdeprecated
--Wdeprecated-declarations
--Wdesignated-init
 -Wdisabled-optimization
--Wdiscarded-array-qualifiers
--Wdiscarded-qualifiers
--Wdiv-by-zero
 -Wdouble-promotion
 -Wduplicated-cond
 -Weffc++
@@ -116,23 +161,12 @@
 -Wfloat-equal
 -Wformat-signedness
 -Wframe-larger-than=
--Wfree-nonheap-object
--Whsa
--Wignored-attributes
 -Wimport # DUMMY switch
--Wincompatible-pointer-types
--Winherited-variadic-ctor
 -Winline
--Wint-conversion
--Wint-to-pointer-cast
--Winvalid-memory-model
--Winvalid-offsetof
 -Winvalid-pch
 -Wjump-misses-init
 -Wlarger-than=
--Wliteral-suffix
 -Wlogical-op
--Wlto-type-mismatch
 -Wmissing-declarations
 -Wmissing-include-dirs
 -Wmissing-prototypes
@@ -142,17 +176,12 @@
 -Wnamespaces
 -Wnested-externs
 -Wnoexcept
--Wnon-template-friend
 -Wnormalized=
 -Wnull-dereference
--Wodr
 -Wold-style-cast
 -Wold-style-definition
--Woverflow
 -Woverloaded-virtual
--Woverride-init-side-effects
 -Wpacked
--Wpacked-bitfield-compat
 -Wpadded
 -Wpedantic
 #    -Wendif-labels
@@ -162,23 +191,12 @@
 #    -Wpointer-sign
 #    -Wvariadic-macros
 -Wplacement-new=
--Wpmf-conversions
--Wpointer-to-int-cast
--Wpragmas
--Wproperty-assign-default
--Wprotocol
 -Wredundant-decls
--Wreturn-local-addr
--Wscalar-storage-order
 -Wselector
 -Wshadow
 #    -Wshadow-ivar
--Wshift-count-negative
--Wshift-count-overflow
--Wshift-negative-value
 -Wshift-overflow=
 -Wsign-promo
--Wsizeof-array-argument
 -Wstack-protector
 -Wstack-usage=
 -Wstrict-aliasing
@@ -186,7 +204,6 @@
 -Wstrict-overflow
 -Wstrict-prototypes
 -Wstrict-selector-match
--Wsubobject-linkage
 -Wsuggest-attribute=const
 -Wsuggest-attribute=format
 -Wsuggest-attribute=noreturn
@@ -194,14 +211,11 @@
 -Wsuggest-final-methods
 -Wsuggest-final-types
 -Wsuggest-override
--Wswitch-bool
 -Wswitch-default
 -Wswitch-enum
--Wsync-nand
 -Wsynth
 -Wsystem-headers
 -Wtemplates
--Wterminate
 -Wtraditional
 #    -Wvariadic-macros
 -Wtraditional-conversion
@@ -212,12 +226,8 @@
 -Wunsafe-loop-optimizations
 -Wunsuffixed-float-constants
 -Wunused-macros
--Wunused-result
 -Wuseless-cast
--Wvarargs
 -Wvector-operation-performance
 -Wvirtual-inheritance
--Wvirtual-move-assign
--Wvla
 -Wwrite-strings
 -Wzero-as-null-pointer-constant

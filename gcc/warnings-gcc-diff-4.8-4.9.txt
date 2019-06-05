@@ -1,7 +1,7 @@
 +-Wconditionally-supported
 +-Wdate-time
-+-Wdelete-incomplete
++-Wdelete-incomplete # (enabled by default)
 +-Wfloat-conversion
---Wmudflap
+--Wmudflap # (enabled by default)
 +-Wmudflap # DUMMY switch
 +-Wopenmp-simd

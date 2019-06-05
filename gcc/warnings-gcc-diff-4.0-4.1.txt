@@ -1,10 +1,10 @@
 +-Wassign-intercept
-+-Wattributes
++-Wattributes # (enabled by default)
 +-Wc++-compat
-+-Wint-to-pointer-cast
++-Wint-to-pointer-cast # (enabled by default)
 +-Wnormalized=
-+-Wpointer-to-int-cast
-+-Wpragmas
++-Wpointer-to-int-cast # (enabled by default)
++-Wpragmas # (enabled by default)
 +-Wstack-protector
 +-Wstrict-selector-match
 +-Wunsafe-loop-optimizations

@@ -1,11 +1,59 @@
 +-Wabi-tag
-+-Waggressive-loop-optimizations
-+-Winherited-variadic-ctor
++-Waggressive-loop-optimizations # (enabled by default)
+--Wclobbered # (enabled by default)
++-Wclobbered
+--Wempty-body # (enabled by default)
++-Wempty-body
+--Wignored-qualifiers # (enabled by default)
+--Wimplicit # (enabled by default)
++-Wignored-qualifiers
++-Wimplicit
+--Wimplicit-int # (enabled by default)
++-Wimplicit-int
++-Winherited-variadic-ctor # (enabled by default)
+--Wjump-misses-init # (enabled by default)
++-Wjump-misses-init
 +-Wliteral-suffix
+--Wmissing-field-initializers # (enabled by default)
++-Wmissing-field-initializers
+--Wmissing-parameter-type # (enabled by default)
++-Wmissing-parameter-type
+--Wold-style-declaration # (enabled by default)
++-Wold-style-declaration
+--Woverlength-strings # (enabled by default)
++-Woverlength-strings
+--Woverride-init # (enabled by default)
++-Woverride-init
 +-Wpedantic
-+-Wreturn-local-addr
+--Wpointer-sign # (enabled by default)
++-Wpointer-sign
++-Wreturn-local-addr # (enabled by default)
+--Wsign-compare # (enabled by default)
+--Wsign-conversion # (enabled by default)
++-Wsign-compare
++-Wsign-conversion
 +-Wsizeof-pointer-memaccess
 +-Wsuggest-attribute=format
+--Wtype-limits # (enabled by default)
++-Wtype-limits
+--Wuninitialized # (enabled by default)
++-Wuninitialized
+--Wunused-but-set-parameter # (enabled by default)
+--Wunused-but-set-variable # (enabled by default)
+--Wunused-function # (enabled by default)
+--Wunused-label # (enabled by default)
++-Wunused-but-set-parameter
++-Wunused-but-set-variable
++-Wunused-function
++-Wunused-label
+--Wunused-parameter # (enabled by default)
++-Wunused-parameter
+--Wunused-value # (enabled by default)
+--Wunused-variable # (enabled by default)
+--Wvariadic-macros
++-Wunused-value
++-Wunused-variable
 +-Wuseless-cast
-+-Wvarargs
-+-Wvirtual-move-assign
++-Wvarargs # (enabled by default)
++-Wvariadic-macros # (enabled by default)
++-Wvirtual-move-assign # (enabled by default)

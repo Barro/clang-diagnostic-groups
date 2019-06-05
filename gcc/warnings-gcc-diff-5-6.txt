@@ -1,24 +1,24 @@
 +-Wduplicated-cond
 +-Wframe-address
-+-Whsa
-+-Wignored-attributes
-+-Wlto-type-mismatch
++-Whsa # (enabled by default)
++-Wignored-attributes # (enabled by default)
++-Wlto-type-mismatch # (enabled by default)
 +-Wmisleading-indentation
 +-Wmultiple-inheritance
 +-Wnamespaces
 +-Wnonnull-compare
 +-Wnull-dereference
-+-Woverride-init-side-effects
++-Woverride-init-side-effects # (enabled by default)
 +-Wplacement-new
 +-Wplacement-new=
-+-Wscalar-storage-order
-+-Wshift-negative-value
++-Wscalar-storage-order # (enabled by default)
++-Wshift-negative-value # (enabled by default)
 +-Wshift-overflow
 +-Wshift-overflow=
-+-Wsubobject-linkage
++-Wsubobject-linkage # (enabled by default)
 +-Wtautological-compare
 +-Wtemplates
-+-Wterminate
++-Wterminate # (enabled by default)
 +-Wunused-const-variable
 +-Wunused-const-variable=
 +-Wvirtual-inheritance

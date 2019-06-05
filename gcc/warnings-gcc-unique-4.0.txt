@@ -15,10 +15,10 @@
 -Wconversion
 -Wctor-dtor-privacy
 -Wdeclaration-after-statement
--Wdeprecated
--Wdeprecated-declarations
+-Wdeprecated # (enabled by default)
+-Wdeprecated-declarations # (enabled by default)
 -Wdisabled-optimization
--Wdiv-by-zero
+-Wdiv-by-zero # (enabled by default)
 -Weffc++
 -Wendif-labels
 -Werror-implicit-function-declaration
@@ -32,26 +32,26 @@
 -Wformat-zero-length
 -Wformat=
 -Wimplicit
--Wimplicit-function-declaration
+-Wimplicit-function-declaration # (enabled by default)
 -Wimplicit-int
 -Wimport
 -Winit-self
 -Winline
--Winvalid-offsetof
+-Winvalid-offsetof # (enabled by default)
 -Winvalid-pch
 -Wlarger-than-
--Wlong-long
+-Wlong-long # (enabled by default)
 -Wmain
 -Wmissing-braces
 -Wmissing-declarations
--Wmissing-field-initializers
+-Wmissing-field-initializers # (enabled by default)
 -Wmissing-format-attribute
 -Wmissing-include-dirs
 -Wmissing-noreturn
 -Wmissing-prototypes
 -Wmultichar
 -Wnested-externs
--Wnon-template-friend
+-Wnon-template-friend # (enabled by default)
 -Wnon-virtual-dtor
 -Wnonnull
 -Wold-style-cast
@@ -60,17 +60,17 @@
 -Wpacked
 -Wpadded
 -Wparentheses
--Wpmf-conversions
+-Wpmf-conversions # (enabled by default)
 -Wpointer-arith
--Wpointer-sign
--Wprotocol
+-Wpointer-sign # (enabled by default)
+-Wprotocol # (enabled by default)
 -Wredundant-decls
 -Wreorder
 -Wreturn-type
 -Wselector
 -Wsequence-point
 -Wshadow
--Wsign-compare
+-Wsign-compare # (enabled by default)
 -Wsign-promo
 -Wstrict-aliasing
 -Wstrict-aliasing=

@@ -1,14 +1,20 @@
-+-Wcpp
+--Wcoverage-mismatch
++-Wcoverage-mismatch # (enabled by default)
++-Wcpp # (enabled by default)
 +-Wdouble-promotion
+--Wimplicit
++-Wimplicit # (enabled by default)
+--Wimplicit-int
 --Wimport
++-Wimplicit-int # (enabled by default)
 +-Wimport # DUMMY switch
 +-Wnoexcept
-+-Wproperty-assign-default
++-Wproperty-assign-default # (enabled by default)
 +-Wsuggest-attribute=const
 +-Wsuggest-attribute=noreturn
 +-Wsuggest-attribute=pure
 +-Wtrampolines
 --Wunreachable-code
 +-Wunreachable-code # DUMMY switch
-+-Wunused-but-set-parameter
-+-Wunused-but-set-variable
++-Wunused-but-set-parameter # (enabled by default)
++-Wunused-but-set-variable # (enabled by default)

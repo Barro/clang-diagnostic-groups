@@ -1,26 +1,38 @@
 +-Wabi=
 +-Warray-bounds=
+--Wbuiltin-macro-redefined
 +-Wbool-compare
++-Wbuiltin-macro-redefined # (enabled by default)
 +-Wc++14-compat
-+-Wc90-c99-compat
-+-Wc99-c11-compat
++-Wc90-c99-compat # (enabled by default)
++-Wc99-c11-compat # (enabled by default)
 +-Wchkp
-+-Wdesignated-init
-+-Wdiscarded-array-qualifiers
-+-Wdiscarded-qualifiers
+--Wdeclaration-after-statement
++-Wdeclaration-after-statement # (enabled by default)
++-Wdesignated-init # (enabled by default)
++-Wdiscarded-array-qualifiers # (enabled by default)
++-Wdiscarded-qualifiers # (enabled by default)
+--Wendif-labels
++-Wendif-labels # (enabled by default)
 +-Wformat-signedness
-+-Wincompatible-pointer-types
-+-Wint-conversion
+--Wimplicit-int
++-Wimplicit-int # (enabled by default)
++-Wincompatible-pointer-types # (enabled by default)
++-Wint-conversion # (enabled by default)
+--Wliteral-suffix
++-Wliteral-suffix # (enabled by default)
 +-Wlogical-not-parentheses
 +-Wmemset-transposed-args
 +-Wnormalized
-+-Wodr
-+-Wshadow-ivar
-+-Wshift-count-negative
-+-Wshift-count-overflow
++-Wodr # (enabled by default)
++-Wshadow-ivar # (enabled by default)
++-Wshift-count-negative # (enabled by default)
++-Wshift-count-overflow # (enabled by default)
 +-Wsized-deallocation
-+-Wsizeof-array-argument
++-Wsizeof-array-argument # (enabled by default)
 +-Wsuggest-final-methods
 +-Wsuggest-final-types
 +-Wsuggest-override
-+-Wswitch-bool
++-Wswitch-bool # (enabled by default)
+--Wvariadic-macros # (enabled by default)
++-Wvariadic-macros

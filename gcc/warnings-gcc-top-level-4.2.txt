@@ -1,10 +1,29 @@
+# enabled by default:
+#    -Wattributes
+#    -Wdeprecated
+#    -Wdeprecated-declarations
+#    -Wdiv-by-zero
+#    -Wimplicit-function-declaration
+#    -Wint-to-pointer-cast
+#    -Winvalid-offsetof
+#    -Wlong-long
+#    -Wmissing-field-initializers
+#    -Wnon-template-friend
+#    -Woverflow
+#    -Woverlength-strings
+#    -Woverride-init
+#    -Wpmf-conversions
+#    -Wpointer-sign
+#    -Wpointer-to-int-cast
+#    -Wpragmas
+#    -Wprotocol
+#    -Wsign-compare
 -pedantic
 -Wabi
 -Waddress
 -Waggregate-return
 -Wall
 -Wassign-intercept
--Wattributes
 -Wbad-function-cast
 -Wc++-compat
 -Wcast-align
@@ -15,10 +34,7 @@
 -Wconversion
 -Wctor-dtor-privacy
 -Wdeclaration-after-statement
--Wdeprecated
--Wdeprecated-declarations
 -Wdisabled-optimization
--Wdiv-by-zero
 -Weffc++
 -Wendif-labels
 -Werror-implicit-function-declaration
@@ -32,52 +48,37 @@
 -Wformat-zero-length
 -Wformat=
 -Wimplicit
--Wimplicit-function-declaration
 -Wimplicit-int
 -Wimport
 -Winit-self
 -Winline
--Wint-to-pointer-cast
--Winvalid-offsetof
 -Winvalid-pch
 -Wlarger-than-
--Wlong-long
 -Wmain
 -Wmissing-braces
 -Wmissing-declarations
--Wmissing-field-initializers
 -Wmissing-format-attribute
 -Wmissing-include-dirs
 -Wmissing-noreturn
 -Wmissing-prototypes
 -Wmultichar
 -Wnested-externs
--Wnon-template-friend
 -Wnon-virtual-dtor
 -Wnonnull
 -Wnormalized=
 -Wold-style-cast
 -Wold-style-definition
--Woverflow
--Woverlength-strings
 -Woverloaded-virtual
--Woverride-init
 -Wpacked
 -Wpadded
 -Wparentheses
--Wpmf-conversions
 -Wpointer-arith
--Wpointer-sign
--Wpointer-to-int-cast
--Wpragmas
--Wprotocol
 -Wredundant-decls
 -Wreorder
 -Wreturn-type
 -Wselector
 -Wsequence-point
 -Wshadow
--Wsign-compare
 -Wsign-promo
 -Wstack-protector
 -Wstrict-aliasing

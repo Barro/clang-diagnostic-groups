@@ -1,9 +1,9 @@
 +-Wc++11-compat
 +-Wdelete-non-virtual-dtor
-+-Wfree-nonheap-object
-+-Winvalid-memory-model
++-Wfree-nonheap-object # (enabled by default)
++-Winvalid-memory-model # (enabled by default)
 +-Wmaybe-uninitialized
-+-Wnarrowing
++-Wnarrowing # (enabled by default)
 +-Wstack-usage=
 +-Wunused-local-typedefs
 +-Wvector-operation-performance

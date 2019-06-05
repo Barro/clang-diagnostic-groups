@@ -7,11 +7,11 @@
 -Wabi-tag
 -Waddress
 -Waggregate-return
--Waggressive-loop-optimizations
+-Waggressive-loop-optimizations # (enabled by default)
 -Wall
 -Warray-bounds
 -Wassign-intercept
--Wattributes
+-Wattributes # (enabled by default)
 -Wbad-function-cast
 -Wbuiltin-macro-redefined
 -Wc++-compat
@@ -25,23 +25,23 @@
 -Wcomments
 -Wconditionally-supported
 -Wconversion
--Wconversion-null
--Wcoverage-mismatch
--Wcpp
+-Wconversion-null # (enabled by default)
+-Wcoverage-mismatch # (enabled by default)
+-Wcpp # (enabled by default)
 -Wctor-dtor-privacy
 -Wdate-time
 -Wdeclaration-after-statement
--Wdelete-incomplete
+-Wdelete-incomplete # (enabled by default)
 -Wdelete-non-virtual-dtor
--Wdeprecated
--Wdeprecated-declarations
+-Wdeprecated # (enabled by default)
+-Wdeprecated-declarations # (enabled by default)
 -Wdisabled-optimization
--Wdiv-by-zero
+-Wdiv-by-zero # (enabled by default)
 -Wdouble-promotion
 -Weffc++
 -Wempty-body
 -Wendif-labels
--Wenum-compare
+-Wenum-compare # (enabled by default)
 -Werror-implicit-function-declaration
 -Wextra
 -Wfloat-conversion
@@ -55,26 +55,26 @@
 -Wformat-zero-length
 -Wformat=
 -Wframe-larger-than=
--Wfree-nonheap-object
+-Wfree-nonheap-object # (enabled by default)
 -Wignored-qualifiers
 -Wimplicit
--Wimplicit-function-declaration
+-Wimplicit-function-declaration # (enabled by default)
 -Wimplicit-int
 -Wimport # DUMMY switch
--Winherited-variadic-ctor
+-Winherited-variadic-ctor # (enabled by default)
 -Winit-self
 -Winline
--Wint-to-pointer-cast
--Winvalid-memory-model
--Winvalid-offsetof
+-Wint-to-pointer-cast # (enabled by default)
+-Winvalid-memory-model # (enabled by default)
+-Winvalid-offsetof # (enabled by default)
 -Winvalid-pch
 -Wjump-misses-init
 -Wlarger-than-
 -Wlarger-than=
 -Wliteral-suffix
 -Wlogical-op
--Wlong-long
--Wmain
+-Wlong-long # (enabled by default)
+-Wmain # (enabled by default)
 -Wmaybe-uninitialized
 -Wmissing-braces
 -Wmissing-declarations
@@ -86,10 +86,10 @@
 -Wmissing-prototypes
 -Wmudflap # DUMMY switch
 -Wmultichar
--Wnarrowing
+-Wnarrowing # (enabled by default)
 -Wnested-externs
 -Wnoexcept
--Wnon-template-friend
+-Wnon-template-friend # (enabled by default)
 -Wnon-virtual-dtor
 -Wnonnull
 -Wnormalized=
@@ -97,26 +97,26 @@
 -Wold-style-declaration
 -Wold-style-definition
 -Wopenmp-simd
--Woverflow
+-Woverflow # (enabled by default)
 -Woverlength-strings
 -Woverloaded-virtual
 -Woverride-init
 -Wpacked
--Wpacked-bitfield-compat
+-Wpacked-bitfield-compat # (enabled by default)
 -Wpadded
 -Wparentheses
 -Wpedantic
--Wpmf-conversions
+-Wpmf-conversions # (enabled by default)
 -Wpointer-arith
 -Wpointer-sign
--Wpointer-to-int-cast
--Wpragmas
--Wproperty-assign-default
--Wprotocol
--Wpsabi
+-Wpointer-to-int-cast # (enabled by default)
+-Wpragmas # (enabled by default)
+-Wproperty-assign-default # (enabled by default)
+-Wprotocol # (enabled by default)
+-Wpsabi # (enabled by default)
 -Wredundant-decls
 -Wreorder
--Wreturn-local-addr
+-Wreturn-local-addr # (enabled by default)
 -Wreturn-type
 -Wselector
 -Wsequence-point
@@ -141,7 +141,7 @@
 -Wswitch
 -Wswitch-default
 -Wswitch-enum
--Wsync-nand
+-Wsync-nand # (enabled by default)
 -Wsynth
 -Wsystem-headers
 -Wtraditional
@@ -164,15 +164,15 @@
 -Wunused-local-typedefs
 -Wunused-macros
 -Wunused-parameter
--Wunused-result
+-Wunused-result # (enabled by default)
 -Wunused-value
 -Wunused-variable
 -Wuseless-cast
--Wvarargs
--Wvariadic-macros
+-Wvarargs # (enabled by default)
+-Wvariadic-macros # (enabled by default)
 -Wvector-operation-performance
--Wvirtual-move-assign
--Wvla
+-Wvirtual-move-assign # (enabled by default)
+-Wvla # (enabled by default)
 -Wvolatile-register-var
 -Wwrite-strings
 -Wzero-as-null-pointer-constant

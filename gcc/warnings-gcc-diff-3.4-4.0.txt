@@ -1,6 +1,26 @@
-+-Wmissing-field-initializers
+--Wdeprecated
+--Wdeprecated-declarations
++-Wdeprecated # (enabled by default)
++-Wdeprecated-declarations # (enabled by default)
+--Wdiv-by-zero
++-Wdiv-by-zero # (enabled by default)
+--Wimplicit-function-declaration
++-Wimplicit-function-declaration # (enabled by default)
+--Winvalid-offsetof
++-Winvalid-offsetof # (enabled by default)
+--Wlong-long
++-Wlong-long # (enabled by default)
++-Wmissing-field-initializers # (enabled by default)
 +-Wmissing-include-dirs
-+-Wpointer-sign
+--Wnon-template-friend
++-Wnon-template-friend # (enabled by default)
+--Wpmf-conversions
++-Wpmf-conversions # (enabled by default)
+--Wprotocol
++-Wpointer-sign # (enabled by default)
++-Wprotocol # (enabled by default)
+--Wsign-compare
++-Wsign-compare # (enabled by default)
 +-Wstrict-aliasing=
 +-Wstrict-null-sentinel
 +-Wvariadic-macros

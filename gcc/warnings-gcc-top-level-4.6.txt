@@ -1,3 +1,53 @@
+# enabled by default:
+#    -Wattributes
+#    -Wclobbered
+#    -Wconversion-null
+#    -Wcoverage-mismatch
+#    -Wcpp
+#    -Wdeprecated
+#    -Wdeprecated-declarations
+#    -Wdiv-by-zero
+#    -Wempty-body
+#    -Wenum-compare
+#    -Wignored-qualifiers
+#    -Wimplicit
+#    -Wimplicit-function-declaration
+#    -Wimplicit-int
+#    -Wint-to-pointer-cast
+#    -Winvalid-offsetof
+#    -Wjump-misses-init
+#    -Wlong-long
+#    -Wmain
+#    -Wmissing-field-initializers
+#    -Wmissing-parameter-type
+#    -Wmudflap
+#    -Wnon-template-friend
+#    -Wold-style-declaration
+#    -Woverflow
+#    -Woverlength-strings
+#    -Woverride-init
+#    -Wpacked-bitfield-compat
+#    -Wpmf-conversions
+#    -Wpointer-sign
+#    -Wpointer-to-int-cast
+#    -Wpragmas
+#    -Wproperty-assign-default
+#    -Wprotocol
+#    -Wpsabi
+#    -Wsign-compare
+#    -Wsign-conversion
+#    -Wsync-nand
+#    -Wtype-limits
+#    -Wuninitialized
+#    -Wunused-but-set-parameter
+#    -Wunused-but-set-variable
+#    -Wunused-function
+#    -Wunused-label
+#    -Wunused-parameter
+#    -Wunused-result
+#    -Wunused-value
+#    -Wunused-variable
+#    -Wvla
 -pedantic
 -Wabi
 -Waddress
@@ -5,7 +55,6 @@
 -Wall
 -Warray-bounds
 -Wassign-intercept
--Wattributes
 -Wbad-function-cast
 -Wbuiltin-macro-redefined
 -Wc++-compat
@@ -13,23 +62,14 @@
 -Wcast-align
 -Wcast-qual
 -Wchar-subscripts
--Wclobbered
 -Wcomment
 -Wconversion
--Wconversion-null
--Wcoverage-mismatch
--Wcpp
 -Wctor-dtor-privacy
 -Wdeclaration-after-statement
--Wdeprecated
--Wdeprecated-declarations
 -Wdisabled-optimization
--Wdiv-by-zero
 -Wdouble-promotion
 -Weffc++
--Wempty-body
 -Wendif-labels
--Wenum-compare
 -Wextra
 -Wfloat-equal
 -Wformat
@@ -41,64 +81,37 @@
 -Wformat-zero-length
 -Wformat=
 -Wframe-larger-than=
--Wignored-qualifiers
--Wimplicit
--Wimplicit-function-declaration
--Wimplicit-int
 -Wimport # DUMMY switch
 -Winit-self
 -Winline
--Wint-to-pointer-cast
--Winvalid-offsetof
 -Winvalid-pch
--Wjump-misses-init
 -Wlarger-than=
 -Wlogical-op
--Wlong-long
--Wmain
 -Wmissing-braces
 -Wmissing-declarations
--Wmissing-field-initializers
 -Wmissing-format-attribute
 -Wmissing-include-dirs
 -Wmissing-noreturn
--Wmissing-parameter-type
 -Wmissing-prototypes
--Wmudflap
 -Wmultichar
 -Wnested-externs
 -Wnoexcept
--Wnon-template-friend
 -Wnon-virtual-dtor
 -Wnonnull
 -Wnormalized=
 -Wold-style-cast
--Wold-style-declaration
 -Wold-style-definition
--Woverflow
--Woverlength-strings
 -Woverloaded-virtual
--Woverride-init
 -Wpacked
--Wpacked-bitfield-compat
 -Wpadded
 -Wparentheses
--Wpmf-conversions
 -Wpointer-arith
--Wpointer-sign
--Wpointer-to-int-cast
--Wpragmas
--Wproperty-assign-default
--Wprotocol
--Wpsabi
 -Wredundant-decls
 -Wreorder
 -Wreturn-type
 -Wselector
 -Wsequence-point
 -Wshadow
--Wsign-compare
--Wsign-conversion
 -Wsign-promo
 -Wstack-protector
 -Wstrict-aliasing
@@ -114,32 +127,20 @@
 -Wswitch
 -Wswitch-default
 -Wswitch-enum
--Wsync-nand
 -Wsynth
 -Wsystem-headers
 -Wtraditional
 -Wtraditional-conversion
 -Wtrampolines
 -Wtrigraphs
--Wtype-limits
 -Wundeclared-selector
 -Wundef
--Wuninitialized
 -Wunknown-pragmas
 -Wunreachable-code # DUMMY switch
 -Wunsafe-loop-optimizations
 -Wunsuffixed-float-constants
 -Wunused
--Wunused-but-set-parameter
--Wunused-but-set-variable
--Wunused-function
--Wunused-label
 -Wunused-macros
--Wunused-parameter
--Wunused-result
--Wunused-value
--Wunused-variable
 -Wvariadic-macros
--Wvla
 -Wvolatile-register-var
 -Wwrite-strings

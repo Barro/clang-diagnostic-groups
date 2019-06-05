@@ -1,4 +1,6 @@
-+-Wconversion-null
-+-Wjump-misses-init
++-Wconversion-null # (enabled by default)
++-Wjump-misses-init # (enabled by default)
+--Wuninitialized
++-Wuninitialized # (enabled by default)
 +-Wunsuffixed-float-constants
-+-Wunused-result
++-Wunused-result # (enabled by default)
