@@ -1,0 +1,12 @@
++-Wavr-rtlib-linking-quirks
++-Wctad-maybe-unsupported
++-Wexport-unnamed
++-Wfortify-source
++-Wimplicit-fixed-point-conversion
++-Wmicrosoft-drectve-section
++-Wmodule-import
++-Wobjc-bool-constant-conversion
++-Wobjc-boxing
++-Wodr
++-Wtautological-objc-bool-compare
++-Wunderaligned-exception-object
